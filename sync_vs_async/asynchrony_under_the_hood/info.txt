@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=SrNQS8J67zc&t=1261s
+
+Event loop - endlessly running single threaded loop, where each iteration runs a small chunk of code.
+If you want to run some code at a later time, it will be added to queue for the event loop, dequeued and executed.
+With ES6 came a new concept, Micro task queue.
+
+JS has what is known as run to completion semantics, current task always finishes before the next starts
