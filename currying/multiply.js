@@ -7,3 +7,5 @@ function multiply (a) {
 }
 
 console.log(+multiply(1)(2)(3));
+// but if we add 4th number it fails:
+// console.log(+multiply(1)(2)(3)(4));
