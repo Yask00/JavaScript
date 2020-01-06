@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="log"></ul>
+
+    <script>
+      $(document).ready(function() {
+        var ul = $("ul.log"),
+          index = 0;
+
+        setTimeout(function getDate() {
+          var started = new Date(),
+            i = index;
+
+          index++;
+
+          $.get("/home/date", function(date) {
+            var end = new Date();
+            ul.append("<li>Request " + i + " started at ......");
+
+            setTimeout(getDate, 5000);
+          });
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>
