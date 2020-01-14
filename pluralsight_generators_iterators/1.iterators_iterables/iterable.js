@@ -1,7 +1,8 @@
 // an object that allows iteration of itself (like array loop)
 // array is build in itterable, as well as string, maps, sets ect
 // iterables implement the @@iterator method
-// Symbol.iterator is a well known symbol in js, specifies the default iteartor of an object
+// Property with key Symbol.iterator is a well known symbol in js,
+// specifies the default iteartor of an object
 
 // for in will loop over the keys of the object, since keys are enumarable properties
 

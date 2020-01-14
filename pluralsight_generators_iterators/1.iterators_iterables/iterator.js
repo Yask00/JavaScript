@@ -25,6 +25,8 @@ function myIterator(start, finish) {
   };
 }
 
+// WE SHOULD CREATE CUSTOM ITERATOR FROM ITREABLE OBJECTS
+
 const it = myIterator(0, 10);
 let res = it.next();
 while (!res.done) {
