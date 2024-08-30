@@ -14,26 +14,62 @@ If arrLength is the number of element in the array, we need to run
 
 */
 
-function bubbleSort(array) {
-    for (let i = 0; i < array.length - 1; i++) {
-        // Last i elements are already in place
-        for (let j = 0; j < (array.length - i - 1); j++) {
-            if (array[j] > array[j + 1]) {
-                var temp = array[j];
-                array[j] = array[j + 1]
-                array[j+1] = temp
+function bubbleSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
             }
         }
-        console.log(array);
     }
+    return arr;
 }
 
-var array = [23, 43, 12, 56, 35];
-bubbleSort(array);
-// Output:
-// [ 12, 23, 35, 43, 56 ] //sorted array
+console.log(bubbleSort([5, 3, 8, 2, 1, 4])); // [1, 2, 3, 4, 5, 8]
 
-var array = [56, 43, 35, 23, 12];
-bubbleSort(array);
-// Output:
-// [ 12, 23, 35, 43, 56 ] //sorted array
+// --------------This example  is better because we skip further iterations iff already oredered------------
+function bubbleSort(array) {
+    const arrayLength = array.length;
+    let isSwapped;
+
+    for (let i = 0; i < arrayLength; i++) {
+        isSwapped = false;
+
+        for (let j = 0; j < arrayLength - i - 1; j++) {
+            if (array[j] > array[j + 1]) {
+                // Swap elements
+                [array[j], array[j + 1]] = [array[j + 1], array[j]];
+                isSwapped = true;
+            }
+        }
+
+        // If no two elements were swapped in the inner loop, array is sorted
+        if (!isSwapped)
+            break;
+    }
+
+    return array;
+}
+
+// Test the function
+const sortedArray = bubbleSort([45, 23, 3, 5346, 5, 356, 243, 35]);
+
+//----------------Event better example with no inner loop---------------
+const bubbleSort = (arr) => {
+    let swapped;
+
+    do {
+        swapped = false;
+        for (let i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                let temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+
+    return arr;
+
+}
