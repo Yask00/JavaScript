@@ -11,6 +11,7 @@ function heapSort(arr) {
     }
     return arr;
   }
+
   function heapify(arr, n, i) {
     let largest = i;
     let l = 2 * i + 1;
@@ -26,4 +27,5 @@ function heapSort(arr) {
       heapify(arr, n, largest);
     }
   }
+
   console.log(heapSort([5, 3, 8, 2, 1, 4])); // [1, 2, 3, 4, 5, 8]

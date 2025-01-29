@@ -6,11 +6,11 @@ Origin source: https://viblo.asia/p/6-algorithms-every-developer-should-know-aAY
 
 # 1. Sorting Algorithm
 
-Sorting is the process of arranging items in a list in a specific order. The most common types of sorting algorithms include
+Sorting is the process of arranging items in a list in a specific order. The most common types of sorting algorithms in folder
 
 # 2. Searching Algorithm
 
-Searching is the process of finding an element in a data set. Common types of searching algorithms include:
+Searching is the process of finding an element in a data set. Common types of searching algorithms in folder:
 
 # 3. Dynamic Programming
 Dynamic programming (DP) is an algorithmic technique that solves an optimization problem by breaking it down into simpler sub-problems and taking advantage of the fact that the optimal solution to the overall problem is dependent on the optimal solution to its sub-problems. A common example is the problem of computing the nth Fibonacci number.

@@ -1,13 +1,10 @@
 // https://www.scaler.com/topics/bubble-sort-in-javascript/
 
 /* 
-Bubble sort is a sorting algorithm that compares adjacent elements and 
-swaps them if they do not follow the desired order. 
-This algorithm is stable and follows in-place sorting. Easy-to-understand and implement, bubble sort in JavaScript takes O(n^2) time complexity to sort and is 
-not the most optimal sorting algorithm possible.
+Bubble sort is a sorting algorithm that compares adjacent elements and swaps them if they do not follow the desired order. 
+This algorithm is stable and follows in-place sorting. Easy-to-understand and implement, bubble sort in JavaScript takes O(n^2) time complexity to sort and is not the most optimal sorting algorithm possible.
 
-Hence, bubble sort in JavaScript primarily works by comparing each adjacent number 
-and swapping them if they are out of the required order, else leaving them as it is.
+Hence, bubble sort in JavaScript primarily works by comparing each adjacent number and swapping them if they are out of the required order, else leaving them as it is.
 
 If arrLength is the number of element in the array, we need to run 
 (arrLength-1) loops, i.e from loop = 0 to loop = 5-1 = 4
@@ -26,8 +23,10 @@ function bubbleSort(arr) {
 }
 
 console.log(bubbleSort([5, 3, 8, 2, 1, 4])); // [1, 2, 3, 4, 5, 8]
+// On the first iteration of i, we move 8 to the end of the Array, else.g the biggest Number.
+// This way we skip on second iteration of i the last number and go to max index 4 to compare 4-5 numbers in the array
 
-// --------------This example  is better because we skip further iterations iff already oredered------------
+// --------------This example  is better because we skip further iterations if already oredered to begin with------------
 function bubbleSort(array) {
     const arrayLength = array.length;
     let isSwapped;
@@ -71,5 +70,4 @@ const bubbleSort = (arr) => {
     } while (swapped);
 
     return arr;
-
 }

@@ -6,14 +6,14 @@
 function quickSort(arr) {
     console.log(arr);
     if (arr.length < 2) return arr;
-    let pivot = arr[arr.length - 1];
+    let pivot = arr[arr.length - 1]; // 4
     let left = [];
     let right = [];
     for (let i = 0; i < arr.length - 1; i++) {
       if (arr[i] < pivot) {
-        left.push(arr[i]);
+        left.push(arr[i]); // 3, 2, 1
       } else {
-        right.push(arr[i]);
+        right.push(arr[i]); // 5, 8
       }
     }
     console.log("left:", left, "right:", right);
