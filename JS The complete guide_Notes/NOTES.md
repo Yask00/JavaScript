@@ -223,8 +223,8 @@ Chrome and Opera both use Blink, Firefox uses Gecko, Internet Explorer uses Trid
 * The time complexity is not about timing how long the algorithm takes. Instead, how many operations are executed. The number of instructions executed by a program is affected by the input’s size and how their elements are arranged. n indicates the input size, while O is the worst-case scenario growth rate function.
 * Generic type example TS – `Array<CalculateContainer>`
 * Generic type of FN – `function test<T>() `– generic type passed to function
-* `Currying` is a functional programming technique where a function with multiple arguments is transformed into a series of functions, each taking a single argument. Instead of taking all arguments at once, the curried function takes the first argument, returns a new function that takes the next argument, and so on until all arguments are provided. The final function then returns the result.
-* A `pipe` is a form of redirection that is used to send the output of one program to another program for further processing.
+* `Currying` is a functional programming technique where a function with multiple arguments is transformed into a series of functions, each taking a single argument. Instead of taking all arguments at once, the curried function takes the first argument, returns a new function that takes the next argument, and so on until all arguments are provided. The final function then returns the result - `multiply(1)(2)(3)`
+* A `pipe` is a form of redirection that is used to send the output of one program to another program for further processing - `x = pipe1([add1, mul2, title])(4);`
 * You implement classical inheritance using prototypal inheritance / chaining / delegation. One cannot exist without the other.
 * Function `composition` is the process of combining two or more functions to produce a new function
 * `Functional` programming is a programming `paradigm` that uses pure functions as the `primary` units of composition. 

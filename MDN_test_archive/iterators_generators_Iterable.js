@@ -1,11 +1,12 @@
-// Custom iterator
+// ----- Custom iterator
 function makeRangeIterator(start = 0, end = Infinity, step = 1) {
   let nextIndex = start;
   let iterationCount = 0;
 
+  // Iterator - object with next method
   const rangeIterator = {
     name: 'test',
-    next() {
+    next() {  // make it iterable
       let output;
       if(nextIndex < end) {
         output = {value: nextIndex, done: false};
@@ -30,7 +31,7 @@ while(!result.done) {
 
 console.log("Iterated over sequence of size:", result.value); // [5 numbers returned, that took interval in between: 0 to 10]
 
-// Generator
+// ------- Generator - auto generates iterators for you
 function* makeRangeIterator(start = 0, end = Infinity, step = 1) {
     let iterationCount = 0;
     for (let i = start; i < end; i+=step) {
@@ -41,7 +42,7 @@ function* makeRangeIterator(start = 0, end = Infinity, step = 1) {
     return iterationCount;
 }
 
-// Iterable
+// -------- Iterable
 const myIterable = {
   *[Symbol.iterator]() {
     yield 1;
