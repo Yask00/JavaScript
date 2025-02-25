@@ -106,6 +106,8 @@ FN inside FN is available only locally
     * can only store Obj and Obj-like elements - collections of objects or symbols only. 
     * If there is no other reference to an object stored in the WeakSet, they can be garbage collected.
     * doesn't allow enumeration
+* `slice` lets you `copy` an array or a part of it.
+* `splice` `mutates` the array (to insert or delete items).
 
 ### Section 9 More Objects
 * Core data `structure`, not data `type`
