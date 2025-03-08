@@ -210,9 +210,10 @@ Like our object is based on invisible obj that for example has toString() method
     * `Unit` (isolated function/class/functionality) testing
     * `Integration` ( dependencies of functionality) testing
     * `E2e` – full flow eg validating a DOM after click testing
-    * Test `runner` (execute and summarize) – MOCHA
-    * `Assertion` Library – define testing logic conditions – CHAI ( JEST combines MOCHA with CHAI)
-    * `Headless` Browser for simulation E2E – Puppeteer
+    * Test `runner` (execute and summarize) – `MOCHA`
+    * `Assertion` Library – define testing logic conditions – `CHAI` 
+        * ( `JEST` combines `MOCHA` with `CHAI`)
+    * `Headless` Browser for simulation E2E – `Puppeteer`
 * Many `render engines` are available, and are usually written in C++. 
 * Examples include:
 Chrome and Opera both use Blink, Firefox uses Gecko, Internet Explorer uses Trident, Edge uses EdgeHTML, Safari uses WebKit
@@ -251,3 +252,6 @@ Chrome and Opera both use Blink, Firefox uses Gecko, Internet Explorer uses Trid
 * `workers` (dedicated/shared/service), which enable you to run some tasks in a separate thread of execution.
 * `window.requestAnimationFrame()`.The window.requestAnimationFrame() method tells the browser you wish to perform an animation. It requests the browser to call a user-supplied callback function before the next repaint. It takes one parameter — the name of the function you want to run for each frame. The next time the browser is ready to update the screen, your function will get called. If that function draws the new update to your animation, then calls requestAnimationFrame() again just before the end of the function
 * A JavaScript `callback` is a function which is to be executed after another function has finished execution. A more formal definition would be - Any function that is passed as an argument to another function so that it can be executed in that other function is called as a callback function.
+* In general, a `Bearer` token is a piece of data that acts as a permit to operate on resources, passed in the Authorization header of requests. Two main types of Bearer tokens exist:
+    * `JWT ID Tokens`: these tokens only convey the identity of the user, and are encoded strings in the JWT format
+    * `OAuth 2.0 Access Token`: these tokens have authorization scopes associated with them, and can provide access to Google API resources, like Drive, Gmail, etc.
