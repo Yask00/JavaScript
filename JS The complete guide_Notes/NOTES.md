@@ -255,3 +255,4 @@ Chrome and Opera both use Blink, Firefox uses Gecko, Internet Explorer uses Trid
 * In general, a `Bearer` token is a piece of data that acts as a permit to operate on resources, passed in the Authorization header of requests. Two main types of Bearer tokens exist:
     * `JWT ID Tokens`: these tokens only convey the identity of the user, and are encoded strings in the JWT format
     * `OAuth 2.0 Access Token`: these tokens have authorization scopes associated with them, and can provide access to Google API resources, like Drive, Gmail, etc.
+* The idea behind `duck typing` is that objects of unrelated types can respond to the same method name and therefore we can treat all the objects that respond to that method name as ducks, or more specifically, as belonging to a specific category of objects.
