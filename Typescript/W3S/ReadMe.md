@@ -305,3 +305,9 @@
     // Usage:
     let obj: DynamicObject = { dynamic_key: "value" };
     ```
+* A `type guard` is a TypeScript technique used to get information about the type of a variable, usually within a conditional block:
+    * `instanceof`
+    * `typeof`
+    * `in` and `is`
+    * `equity narrowing`
+* `Declaration merging` - Unlike a `type alias`, an `interface` can be defined multiple times, and will be treated as a single interface (with members of all declarations being merged).
