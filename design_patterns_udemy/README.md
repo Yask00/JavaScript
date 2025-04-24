@@ -10,6 +10,11 @@
     * `Factory` - Initializer is not descriptive, wholesale obj creation, factory method is static method letting you create an object - `Point` and `PointFactory`
     * `Prototype` - iterate exisiting design and improve on them, clone the ptototype and customize it. It is by description a partially or fully initilizaed object that you copy and make use of - `John` is prototype for `Jane` objects both `Person` witn `Address` w or without deep copying props examples.
     * `Singleton` - one instance - database, object factory, construcor call is expective
-* `Structural`
+* `Structural` - relationships between objects
+    * `Adapter` - adapt interface given to anoher one that we need (ie electrical device) - `Point/Line` to `LinesToPointAdapter`. Or XML to JSON adapter
+    * `Bridge` - we have base class ThreadScheduler with two types and run on two env linux/windows and generate 2x2 classes - instead base class and extend to platform and type sub classes. In other words amechanism that decouples an interface from implementation - way of connecting two hieararchys of objects together.
+    * `Composite` - Composition lets us make compound objects - collections of things, ie shape group of several different shapes. Let us treat both single and composite objects uniformly ie Foo and array of Foos having same API. Example with `GraphicObject` as sinlge obj or group of such. The composite pattern brings flexibility in an application and makes sure the group of objects behaves in the same way as an individual object.
+    * 
+    * 
     * 
     * 
