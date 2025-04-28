@@ -14,7 +14,10 @@
     * `Adapter` - adapt interface given to anoher one that we need (ie electrical device) - `Point/Line` to `LinesToPointAdapter`. Or XML to JSON adapter
     * `Bridge` - we have base class ThreadScheduler with two types and run on two env linux/windows and generate 2x2 classes - instead base class and extend to platform and type sub classes. In other words amechanism that decouples an interface from implementation - way of connecting two hieararchys of objects together.
     * `Composite` - Composition lets us make compound objects - collections of things, ie shape group of several different shapes. Let us treat both single and composite objects uniformly ie Foo and array of Foos having same API. Example with `GraphicObject` as sinlge obj or group of such. The composite pattern brings flexibility in an application and makes sure the group of objects behaves in the same way as an individual object.
-    * 
-    * 
-    * 
+    * `Decorator` - add addiotional behaviors without modify or inherit the class. It is reference to the object without inherit. Ie wrapper to underlying class without modifying it
+    * `Facade` - exposing several components through single interface - house(electrical, sanitation, floor layers)
+    * `Flyweight` - space optimization - save memory by storing externally the data associated with similar objects. Avoid redundency when store data. Like xample of lists of first and last names with index and create names based on them
+    * `Proxy` - an interface to access particular resource. A class that functions as an interface to a prticular resource.
+* `Behavioral` - handle communications between objects
+    * Chain of responsibility - unethical behavior of employee who takes the blame? Employee/Manager/CEO. A chain of components who all get a chance to process a command or query, optionally having default processing implementation and an ability to terminate the process chain.
     * 
