@@ -19,5 +19,12 @@
     * `Flyweight` - space optimization - save memory by storing externally the data associated with similar objects. Avoid redundency when store data. Like xample of lists of first and last names with index and create names based on them
     * `Proxy` - an interface to access particular resource. A class that functions as an interface to a prticular resource.
 * `Behavioral` - handle communications between objects
-    * Chain of responsibility - unethical behavior of employee who takes the blame? Employee/Manager/CEO. A chain of components who all get a chance to process a command or query, optionally having default processing implementation and an ability to terminate the process chain.
+    * `Chain of responsibility` - unethical behavior of employee who takes the blame? Employee/Manager/CEO. A chain of components who all get a chance to process a command or query, optionally having default processing implementation and an ability to terminate the process chain.
+    * `Command` - Variable assignment - cannot undo assignment, cannot directly serialize. We want an object that represent an operation - person should be able to change age. Uses - gui commands, multi level undo/redo...An object which represent an instruction to perform a particular action, contains all the info necessary for the action to be taken
+    * `Interpreter` - textual input needs to be processed (programming language ie / Regex / numeric expressions 3+4/5). A component that processes structured text data. Does so by turning it into separate lexical tokens (lexing) and then interpreting sequences of said tokens (parsing)
+    * `Iterator` - traversal of data structure.Iterator is a class that facilitates the traversal. Symbol.iterator is member of class that returms iterator object with function called next() returned the current value and done flag for status. Iterator itself is not iterable.
+    * 
+    * 
+    * 
+    * 
     * 
