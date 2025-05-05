@@ -23,8 +23,11 @@
     * `Command` - Variable assignment - cannot undo assignment, cannot directly serialize. We want an object that represent an operation - person should be able to change age. Uses - gui commands, multi level undo/redo...An object which represent an instruction to perform a particular action, contains all the info necessary for the action to be taken
     * `Interpreter` - textual input needs to be processed (programming language ie / Regex / numeric expressions 3+4/5). A component that processes structured text data. Does so by turning it into separate lexical tokens (lexing) and then interpreting sequences of said tokens (parsing)
     * `Iterator` - traversal of data structure.Iterator is a class that facilitates the traversal. Symbol.iterator is member of class that returms iterator object with function called next() returned the current value and done flag for status. Iterator itself is not iterable.
-    * 
-    * 
-    * 
-    * 
+    * `Mediator` - components may go in and out of system - makes no sense for them to have direct reference - central component for communication
+    * `Memento` - Object in system goes through changes - bank account (deposits/withdrawals).Record every change and teach to undo or save snapshots of the system (memento). Ie A token/handler representing the system state. lets us roll back to the state when the token was generated. May or mey not directly expose state info
+    * `Observer` - need to be informed when things happen, watch when object does something, external event outside the system happens. Option to unsubscribe. The entity   vs `observer`
+    * `State` - ordinary  telephone - depends what you can do - pick up / make a call. Changes are explicit or they can be response to event. Object behavior is determined by its state. Transitions from one to another. A formalized construct which manages states and transitions is called state machine.
+    * `Strategy` - many algorythms can be decompress into high and low level parts - making hot beverage and put teabag into water. Reuse the high level to make cofee ie.
+    * `Template` - similar to strategy method - decompsed algos into common parts - through use of empty abstract members(empty) - inherit class and override members. Ie define skeleton of algo(main thins is defined in main class) with concrete implementations defined in subclasses
+    * `Visitor` - need to defined new operation on entire class hierarchy. Document printable to different formats - need access to the non common aspects of classes. Create external component knows how to navigate entire structure. ie component (visitor) knows how to traverse a data structure composed of possibly related types.
     * 
