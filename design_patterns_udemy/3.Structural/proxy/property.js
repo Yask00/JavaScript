@@ -7,6 +7,7 @@ class Property {
   get value() {
     return this._value;
   }
+
   set value(newValue) {
     if (this._value === newValue) return;
     console.log(`Assigning ${newValue} to ${this.name}`);
@@ -22,6 +23,7 @@ class Creature {
   get agility() {
     return this._agility.value;
   }
+  
   set agility(value) {
     this._agility.value = value;
   }
